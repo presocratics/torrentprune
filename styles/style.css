@@ -1,0 +1,438 @@
+/* Layout (Torrents page) */
+html {
+	width: 100%;
+}
+body {
+	width: 100%;
+	font-family: tahoma,helvetica,sans-serif;
+	font-size: 8pt;
+	color: #444;
+	background-color: #DDD;
+	text-align:center;
+}
+/* Common elements */
+a {
+	text-decoration: underline;
+	border: none;
+	color: #666;
+}
+a:hover {
+	text-decoration: underline;
+	color: #777;
+}
+h1,h2,h3,h4 {
+	margin: 0px 0px;
+	font-weight: bold;
+}
+
+h2 {
+	vertical-align: middle;
+	font-size: 12pt;
+	color: #444;
+	text-align: center;
+}
+.withimage {
+	vertical-align: middle;
+	margin: 36px 0px;
+	font-size: 12pt;
+	color: #444;
+	text-align: left;
+}
+.title {
+	margin: 62px 0px;
+	text-align: left;
+}
+h3 {
+	text-align: center;
+	vertical-align: middle;
+	color: #444;
+}
+
+h4 {
+	font-size: 8pt;
+}
+
+p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10%;
+	margin-right: 5px;
+	text-align: center;
+}
+
+li {
+	margin: 5px 15px;
+}
+
+textarea {
+	padding: 2px 3px;
+}
+
+img {
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+}
+.floatLeft { 
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20%;
+	margin-right: 10px;
+    float: left; 
+	vertical-align: 30px;
+}
+.rightFloat { 
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10%;
+	margin-right: 10px;
+    float: left; 
+	vertical-align: 30px;
+}
+#floathead {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: 15px;
+    float: left; 
+}
+
+img.floatRight { 
+    float: right; 
+    margin: 4px; 
+	vertical-align: middle;
+}
+
+/* Ratio Colors */
+
+.r00 { color: #FF0000; }
+.r01 { color: #FF1300; }
+.r02 { color: #FF1300; }
+.r03 { color: #FF2600; }
+.r04 { color: #FF4C00; }
+.r05 { color: #FF5E00; }
+.r06 { color: #FF5E00; }
+.r07 { color: #FF7100; }
+.r08 { color: #FF9700; }
+.r09 { color: #FFAA00; }
+.r10 { color: #74C42E; }
+.r20 { color: #418B00; }
+.r50 { color: #418B00; }
+.r99 { color: #418B00; }
+
+ul.thin {
+	margin: 0px 0px 0px 25px;
+	padding: 0px;
+}
+
+ul.thin li {
+	margin: 0px 0px;
+	padding: 0px;
+}
+
+/* Layout (Every page) */
+
+#header {
+	width: 100%;
+	padding: 0px 0 0 0;
+}
+
+#content {
+	margin: auto;
+	width: 100%;
+	overflow: hidden;
+	background-color: #EEE;
+	position: relative;
+	top: 60px;
+}
+
+#wrapper {
+	width: 90%;
+	margin: 0px auto;
+}
+
+#footer {
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+	padding: 1em 0;
+}
+
+#logo {
+	width: 64px;
+	height: 64px;
+	background: url('images/logo.png') no-repeat center center;
+	margin: 5px auto 5px auto;
+}
+
+#logo a {
+	border: none;
+	width: 64px;
+	height: 64px;
+	display: block;
+}
+
+#logo a:hover {
+	border: none;
+}
+
+#menu {
+	position: absolute;
+	top: 90px;
+	width: 90%;
+	padding: 0.6em 0;
+	text-align: center;
+	background-color: #DDD;
+	font-size: 10pt;
+}
+
+#menu ul li {
+	position: relative;
+	display: inline;
+	background-color: #CCC;
+	padding: 6px 0;
+	margin: 0px;
+}
+
+#index #nav_index, #torrents #nav_torrents, #requests #nav_requests, #forums #nav_forums, #top10 #nav_top10, #rules #nav_rules, #kb #nav_kb, #staff #nav_staff {
+	background-color: #EEE;
+}
+
+#menu ul li a {
+	padding: 0.6em 2%;
+	color: #444;
+}
+
+#menu ul li a:hover {
+	background-color: #EEE;
+	text-decoration: none;
+	color: #444;
+}
+
+p.min_padding {
+	margin: 2px 0px;
+}
+
+.pad {
+	padding: 1em;
+}
+
+.vertical_space {
+	margin-bottom: 10px;
+}
+
+.box {
+	font-size: 8pt;
+	background-color: #DDD;
+	border: 1px solid #BBB;
+}
+
+.pad h3,.pad h4,.padbox h3,.padbox h4 {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+.sidebar {
+	float: right;
+	width: 250px;
+	height: 100%;
+}
+
+.sidebar .box {
+	margin: 0px 5px 10px 5px;
+}
+
+.head {
+	padding: 4px;
+	border-bottom: 1px solid #BBB;
+	background: #CCC;
+	color: #444;
+}
+
+.body {
+	padding: 3px 10px 10px 10px;
+}
+
+.main_column {
+	margin: 0px 255px 10px 0px;
+	width: 590px;
+}
+
+.main_column .box,.main_column table {
+	margin-bottom: 10px;
+}
+
+.noborder {
+	border: none;
+}
+
+ul.nobullet {
+	list-style-type: none;
+}
+
+table {
+	width: 50%;
+	min-width: 800px;
+	border-collapse: collapse;
+	border: 1px solid #BBB;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+tr {
+	border: 1px solid #BBB;
+	background-color: #EEE;
+}
+
+tr.rowa {
+	background-color: #EEE;
+}
+
+td {
+	border: 1px solid #BBB;
+	padding: 5px;
+	text-align: left;
+}
+td.a {
+	border: 1px solid #BBB;
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.colhead {
+	background: #CCC;
+	font-weight: bold;
+	color: #444;
+}
+
+td.colhead,.colhead td {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.colhead .sign {
+	padding: 0px 8px 0px 8px;
+	font-size: 12pt;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.colhead_dark {
+	background: #CCC;
+	color: #444;
+	vertical-align: middle;
+}
+
+.colhead_dark a {
+	color: #333;
+}
+
+td.label {
+	font-weight: bold;
+	text-align: right;
+	width: 180px;
+}
+
+table.slice {
+	margin-top: -1px;
+}
+
+
+.hide {
+	display: none;
+}
+
+/* Layout (home page) */
+
+ul.stats li {
+	padding: 0px 0px 1px 0px;
+}
+
+ul.poll li {
+	padding: 0px 0px 0px 10px;
+	margin: 0px;
+}
+
+ul.poll li.graph {
+	margin-bottom: 3px;
+	padding-left: 20px;
+}
+
+/* Layout (Torrents page) */
+
+.show_torrents {
+	width: 28px;
+	height: 28px;
+	background: url('images/show.png') no-repeat center center;
+}
+
+.hide_torrents {
+	width: 28px;
+	height: 28px;
+	background: url('images/hide.png') no-repeat center center;
+}
+
+.show_torrents_link {
+	border: none;
+	width: 28px;
+	height: 28px;
+	display: block;
+}
+
+.filter_torrents {
+	width: 750px;
+	margin: auto;
+}
+
+.filter_torrents .submit {
+	text-align: right;
+	padding-top: 5px;
+}
+
+.cat_list tr td {
+	border: none;
+}
+
+.torrent_table tr {
+	vertical-align: top;
+}
+
+.colhead .sign, .colhead_dark .sign {
+	padding: 0px 8px 0px 8px;
+	vertical-align:middle;
+	text-align:center;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.torrent_table tr.group, tr.torrent {
+	background-color: #DDD;
+}
+
+tr.group_torrent {
+	background-color: #EEE;
+}
+
+.torrent_table div.tags {
+	font-weight: normal;
+}
+
+.torrent_table tr .center {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.group_torrent span {
+	float: right;
+}
+
+.torrent span {
+	font-weight:normal;
+	float:right;
+}
+
+.nobr {
+	white-space: nowrap;
+}
+
